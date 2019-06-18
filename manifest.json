@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "script.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Fullscreen on-screen Screen Keyboard for touch screen devices",
+   "icons": {
+      "128": "keyboard.png",
+      "16": "keyboard.png",
+      "48": "keyboard.png"
+   },
+   "manifest_version": 2	,
+   "name": "Screen Keyboard",
+   "options_page": "options.html",
+   "page_action": {
+      "default_icon": "buttons/keyboard_2.png",
+      "default_popup": "toggle.html",
+      "default_title": "Screen Keyboard"
+   },
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.12.8",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArvgqs/HHgZ76vsKOmdB6l5pKKo/LQF7W5BRNXLhtSBqaUFyPTYBnqGMuz9ogag9dYAXUEkE4H81aimYD/9hBoNp1hJ9i6bAgBqVi8ygZ6PhbrUB/WF40e6l6AG+Ujm5dhZJooZUjhdh+moXKqNu6OCmFx7jjTQuBQnP8+ImPOYpGwb87QlSqBHgxaGbzzCK/0z2yjyzWg1leDhoq0Y1O8RGu/mfNUQ0D/9iqkkS188axr63Br1UZ59AZAPP+bxIyKRfPKkpQuD99NCPLMrafAHgSOKgA/D0wgRS20oivBYTDBWeRkcGqe9icGxO8iItILQluXzR41omB+t0lLKdrjQIDAQAB",
+   "web_accessible_resources": [ "keyboard.html", "keyboard_*.html", "keyboard_en.html", "keyboard_ru.html", "style.css", "options/*", "toggle.html", "toggle.js", "icons/*", "icons/backspace.png", "icons/backspace-e.png", "icons/close.png", "icons/enter.png", "icons/enter-e.png", "icons/settings.png", "icons/shift.png", "buttons/*", "buttons/keyboard_1.png", "buttons/keyboard_2.png", "buttons/keyboard_3.png" ]
+}
